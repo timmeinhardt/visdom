@@ -881,6 +881,7 @@ class App extends React.Component {
   renderEnvControls() {
     var slist = this.state.envList.slice();
     slist.sort();
+    slist.reverse();
     var roots = Array.from(
       new Set(slist.map((x) => {return x.split('_')[0];}))
     );

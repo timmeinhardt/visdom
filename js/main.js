@@ -882,6 +882,7 @@ class App extends React.Component {
     var slist = this.state.envList.slice();
     slist.sort();
     slist.reverse();
+    console.log(slist);
     var roots = Array.from(
       new Set(slist.map((x) => {return x.split('_')[0];}))
     );
